@@ -1,0 +1,12 @@
+var w=120;
+var x=2;
+var y=3;
+var z=5;
+console.log ("answer=" + (z*w));
+console.log ("answer=" + (y+z*x));
+console.log ("answer=" + (y-x));
+console.log ("answer=" + (w/y));
+console.log ("answer=" + (x-z*w));
+console.log ("answer=" + (y+z/y));
+console.log ('answer=' + (y-x*z));
+console.log ("answer=" + (w/y-x));

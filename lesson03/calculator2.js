@@ -1,8 +1,12 @@
-//begin by entering the operation
+
+// enter first number for the operation
+const number1 = parseFloat(prompt('Enter first number: '));
+
+
+//enter the operation sign
 const operator = prompt('Enter operator ( either +, -, * or / ): ');
 
-// enter two numbers to perform math operations on
-const number1 = parseFloat(prompt('Enter first number: '));
+//enter second number for the operation
 const number2 = parseFloat(prompt('Enter second number: '));
 
 let result;
