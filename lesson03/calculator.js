@@ -1,7 +1,7 @@
-var w=120;
-var x=2;
-var y=3;
-var z=5;
+const w=120;
+const x=2;
+const y=3;
+const z=5;
 console.log ("answer=" + (z*w));
 console.log ("answer=" + (y+z*x));
 console.log ("answer=" + (y-x));
