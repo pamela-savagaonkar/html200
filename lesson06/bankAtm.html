@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bank ATM</title>
+    <link rel="stylesheet" type="text/css" href="">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/aef11390a8.js" crossorigin="anonymous"></script>
+  </head>
+
+<body>
+    <script src="./bankAtm.js"></script>
+    <form method="post">
+        <label>Please Enter Your Pin Number:</label>
+        <input type="password" name="number" id="number" />
+        <input type="button" name="submit" id="submit" onclick="getaction()" value="Go" />
+        <p id="bank"></p>
+
+        <div id="options" style="display:none;">
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='1'/>Balance
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='2'/>Withdraw
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='3'/>Deposit
+            <input type='radio' name='radio' onclick='myfunction(this.value)' value='4'/>Exit
+        </div>
+        <p id="bank1"></p>
+
+        <div id="withdraw" style="display:none;">
+            <label>Please Enter Your Withdraw Amount:</label>
+            <input type="text" name="amount1" id="amount1" value="" />
+            <input type="button" name="submit1" value="Submit" onclick="getamount()" />
+        </div>
+
+        <div id="deposit" style="display:none;">
+            <label>Please Enter Your Deposit Amount:</label>
+            <input type="text" name="amount2" id="amount2" value="" />
+            <input type="button" name="submit2" value="Submit" onclick="depositAmount()" />
+        </div>
+    </form>
+
+</body>
+
+</html>
+
+
